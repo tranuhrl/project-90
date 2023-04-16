@@ -1,44 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<script src = "main.js"></script>
-<link rel = "stylesheet" type = "text/css" href = "style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Titan+One&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-<script src = "login.js"></script>
-</head>
-<body>
-    
-    <div id = "a">
-        <center>
-            <h1>
-                Math Guessing Game
-            </h1>
-            <div class = "col-lg-4 col-sm-8 col-xs-11 login_div1"></div>
-            <h3>Player 1 Name:</h3>
-            <label class = "main">Name Here:</label>
-            <input type = "text" id = "player1_name_input" class = "form-control" placeholder = "         Player 1 name">
-        
-            <div class = "col-lg-4 col-sm-8 col-xs-11 login_div2"></div>
-            <h3>Player 2 Name:</h3>
-            <label class = "main">Name Here:</label>
-            <input type = "text" id = "player2_name_input" class = "form-control" placeholder = "         Player 2 name">
-        
-            <br>
-            <br>
-        
-            <button id = "sign_in" class = "btn btn-success" onclick = "addUser();">Sign In</button>
-        </center>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <h4 id="player1_name"></h4>
+    <span id="player1_score"></span>
+    <br />
+    <h4 id="player2_name"></h4>
+    <span id="player2_score"></span>
+
+    <div class="container">
+      <center>
+        <h2 style="color: black; font-family: 'Oswald', sans-serif" id="title">
+          The Math Quiz Game
+        </h2>
+      </center>
     </div>
-</body>
+
+    <div id="output">
+    </div>
+    <br>
+    <br>
+<center>
+      <p>
+        Number 1
+      </p>
+      <input type = "text" placeholder = "             Number 1">
+      <br>
+      <br>
+      <br>
+      <p>Number 2</p>
+      <input type = "text" placeholder = "             Number 2">
+      <br>
+      <br>
+      <button>Check</button>
+</center>
+  </body>
 </html>
